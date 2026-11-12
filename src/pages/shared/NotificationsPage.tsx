@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+﻿import { useMemo, useState } from "react"
 import { Link, useNavigate } from "react-router"
 import { Button, Icon } from "@/components/common/legacy"
 import { usePlatform, type NotificationRecord } from "@/contexts/PlatformContext"
@@ -178,7 +178,7 @@ export default function NotificationsPage() {
           <div className="notif-title-area">
             <h1>Thông báo của bạn</h1>
             <p>
-              Cập nhật tức thời về tin đăng, cuộc trò chuyện và các hoạt động trên hệ thống Trọ Ơi.
+              Cập nhật tức thời về tin đăng, cuộc trò chuyện và các hoạt động trên hệ thống Trọ Tốt.
             </p>
           </div>
 

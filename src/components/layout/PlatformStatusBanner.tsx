@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+﻿import { useEffect, useState } from "react"
 import { usePlatform } from "@/contexts/PlatformContext"
 import { isApiMode } from "@/services/apiClient"
 
@@ -20,6 +20,6 @@ export default function PlatformStatusBanner() {
   const error = connectionState === "error" ? connectionError : requestError
   if (!error && connectionState !== "loading") return null
   return <div className={error ? "platform-status-banner is-error" : "platform-status-banner"} role={error ? "alert" : "status"}>
-    {error ? `Chưa đồng bộ với máy chủ: ${error}` : "Đang tải dữ liệu Trọ Ơi…"}
+    {error ? `Chưa đồng bộ với máy chủ: ${error}` : "Đang tải dữ liệu Trọ Tốt…"}
   </div>
 }

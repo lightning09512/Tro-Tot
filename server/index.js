@@ -132,7 +132,7 @@ io.on("connection", (socket) => {
 })
 
 const port = Number(process.env.PORT || 3001)
-server.listen(port, "0.0.0.0", () => console.log(`Tro Oi API listening on ${port}`))
+server.listen(port, "0.0.0.0", () => console.log(`Tro Tot API listening on ${port}`))
 if (pool) pool.query("SELECT 1").catch((error) => console.warn(`PostgreSQL unavailable: ${error.message}`))
 connectMongo()
   .then(() => flushNotificationOutbox().catch((error) => console.warn(`Notification outbox unavailable: ${error.message}`)))

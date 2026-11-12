@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type MouseEvent } from "react"
+﻿import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type MouseEvent } from "react"
 import { useNavigate } from "react-router"
 import { Icon } from "@/components/common/legacy"
 import { usePlatform } from "@/contexts/PlatformContext"
@@ -478,7 +478,7 @@ export default function AdminDashboardPage() {
         await addNotification({
           userId: target.authorId,
           title: "Bài viết diễn đàn đã được duyệt",
-          detail: `Bài chia sẻ của bạn trên cộng đồng Trọ Ơi đã được phê duyệt hiển thị.`,
+          detail: `Bài chia sẻ của bạn trên cộng đồng Trọ Tốt đã được phê duyệt hiển thị.`,
         }).catch(() => undefined)
       }
       setActionFeedback({

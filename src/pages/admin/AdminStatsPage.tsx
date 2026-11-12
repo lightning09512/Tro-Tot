@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+﻿import { useEffect, useMemo, useState } from "react"
 import { Button, Icon } from "@/components/common/legacy"
 import { usePlatform } from "@/contexts/PlatformContext"
 import { apiRequest, isApiMode } from "@/services/apiClient"
@@ -109,6 +109,6 @@ export default function AdminStatsPage() {
     {isApiMode && statsError && <div className="form-message error" role="alert"><p>{statsError}</p><Button type="button" variant="outline" onClick={() => setRetry((value) => value + 1)}>Thử tải lại</Button></div>}
     <section className="metric-grid admin-metric-grid">{metrics.map((item) => <article className="metric-card" key={item.name}><span><Icon name={item.icon}/></span><div><small>{item.name}</small><strong>{displayMetric(item.value)}</strong><p>{isApiMode && !apiStats ? "Chưa có dữ liệu để hiển thị" : item.hint}</p></div></article>)}</section>
     <div className="admin-report-grid"><section className="resource-panel analytics-panel"><div className="editor-section-title"><div><h3>Hoạt động tin đăng</h3><p>{isApiMode ? "Lượt xem được ghi nhận từ API." : "Lượt xem được ghi nhận trong trình duyệt này."}</p></div></div><div className="analytic-bars">{!topRooms.length && <p className="management-feedback">Chưa có tin cho thuê trong khoảng thời gian này.</p>}{topRooms.map((item) => <div className="analytic-bar-row" key={item.id}><span>{item.title}</span><div><i style={{ width: `${Math.max(0, item.views / Math.max(1, ...topRooms.map((room) => room.views)) * 100)}%` }}/></div><b>{item.views}</b></div>)}</div></section><section className="resource-panel engagement-panel"><div className="editor-section-title"><div><h3>Tương tác cộng đồng</h3><p>{isApiMode ? "Hoạt động được lưu trên máy chủ." : "Hoạt động ghi nhận trong trình duyệt này."}</p></div></div><div className="engagement-stats"><div><strong>{displayMetric(displayViews)}</strong><span>Lượt xem tin</span></div><div><strong>{displayMetric(displayContacts)}</strong><span>Lượt liên hệ</span></div><div><strong>{displayMetric(displayLikes)}</strong><span>Lượt thích bài viết</span></div></div></section></div>
-    <p className="demo-note">Khoảng thời gian: {period === "365" ? "12 tháng" : `${period} ngày`} gần nhất. {isApiMode ? "Số liệu được tải từ dịch vụ Trọ Ơi." : "Dữ liệu được lưu trong trình duyệt này."}</p>
+    <p className="demo-note">Khoảng thời gian: {period === "365" ? "12 tháng" : `${period} ngày`} gần nhất. {isApiMode ? "Số liệu được tải từ dịch vụ Trọ Tốt." : "Dữ liệu được lưu trong trình duyệt này."}</p>
   </main>
 }

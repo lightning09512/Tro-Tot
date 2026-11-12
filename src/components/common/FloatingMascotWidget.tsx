@@ -1,4 +1,4 @@
-import { useState } from "react"
+﻿import { useState } from "react"
 import { useNavigate } from "react-router"
 import { Icon } from "@/components/common/legacy"
 import BrandMark from "@/components/common/BrandMark"
@@ -21,12 +21,12 @@ export default function FloatingMascotWidget() {
             type="button"
             onClick={() => setShowAppModal(true)}
             className="group relative cursor-pointer border-0 bg-transparent p-0 transition-transform duration-300 hover:scale-105 active:scale-95 focus:outline-none"
-            title="Tải app Trọ Ơi nhận quà"
-            aria-label="Tải app Trọ Ơi nhận quà"
+            title="Tải app Trọ Tốt nhận quà"
+            aria-label="Tải app Trọ Tốt nhận quà"
           >
             <img
               src="/images/banners/mascot-app-floating-sticker.jpg"
-              alt="Tải app Trọ Ơi nhận quà"
+              alt="Tải app Trọ Tốt nhận quà"
               className="size-13 sm:size-14 rounded-2xl object-contain drop-shadow-lg"
             />
             {/* Pulsing indicator ring */}
@@ -104,26 +104,26 @@ export default function FloatingMascotWidget() {
             </div>
 
             <h3 className="text-lg font-extrabold text-gray-900 mb-1">
-              Tải App Trọ Ơi - Nhận Quà Ngay!
+              Tải App Trọ Tốt - Nhận Quà Ngay!
             </h3>
             <p className="text-xs text-gray-600 mb-4 leading-relaxed">
-              Quét mã QR để tải app Trọ Ơi, nhận voucher ăn uống và thông báo phòng trọ mới nhất tại khu vực của bạn!
+              Quét mã QR để tải app Trọ Tốt, nhận voucher ăn uống và thông báo phòng trọ mới nhất tại khu vực của bạn!
             </p>
 
             <div className="mx-auto mb-4 flex size-40 items-center justify-center rounded-2xl border-2 border-dashed border-[#fed7aa] bg-[#fffaf5] p-3 shadow-inner">
               <svg viewBox="0 0 120 120" className="size-full text-[#1e293b]">
                 <rect width="120" height="120" fill="white" rx="8" />
-                <rect x="12" y="12" width="30" height="30" fill="#245f3b" rx="4" />
+                <rect x="12" y="12" width="30" height="30" fill="#ea580c" rx="4" />
                 <rect x="17" y="17" width="20" height="20" fill="white" rx="2" />
-                <rect x="22" y="22" width="10" height="10" fill="#245f3b" rx="1" />
+                <rect x="22" y="22" width="10" height="10" fill="#ea580c" rx="1" />
 
-                <rect x="78" y="12" width="30" height="30" fill="#245f3b" rx="4" />
+                <rect x="78" y="12" width="30" height="30" fill="#ea580c" rx="4" />
                 <rect x="83" y="17" width="20" height="20" fill="white" rx="2" />
-                <rect x="88" y="22" width="10" height="10" fill="#245f3b" rx="1" />
+                <rect x="88" y="22" width="10" height="10" fill="#ea580c" rx="1" />
 
-                <rect x="12" y="78" width="30" height="30" fill="#245f3b" rx="4" />
+                <rect x="12" y="78" width="30" height="30" fill="#ea580c" rx="4" />
                 <rect x="17" y="83" width="20" height="20" fill="white" rx="2" />
-                <rect x="22" y="88" width="10" height="10" fill="#245f3b" rx="1" />
+                <rect x="22" y="88" width="10" height="10" fill="#ea580c" rx="1" />
 
                 <rect x="48" y="15" width="8" height="8" fill="#e36825" />
                 <rect x="60" y="20" width="10" height="6" fill="#1e293b" />
@@ -131,7 +131,7 @@ export default function FloatingMascotWidget() {
                 <rect x="58" y="32" width="12" height="10" fill="#e36825" />
                 <rect x="15" y="48" width="8" height="14" fill="#1e293b" />
                 <rect x="30" y="52" width="12" height="8" fill="#1e293b" />
-                <rect x="48" y="52" width="24" height="20" fill="#245f3b" rx="3" />
+                <rect x="48" y="52" width="24" height="20" fill="#ea580c" rx="3" />
                 <rect x="78" y="52" width="14" height="8" fill="#1e293b" />
                 <rect x="98" y="50" width="10" height="12" fill="#e36825" />
                 <rect x="48" y="80" width="10" height="12" fill="#1e293b" />
@@ -143,15 +143,15 @@ export default function FloatingMascotWidget() {
             <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
               <button
                 type="button"
-                onClick={() => alert("Ứng dụng Trọ Ơi trên iOS sắp phát hành trên App Store!")}
+                onClick={() => alert("Ứng dụng Trọ Tốt trên iOS sắp phát hành trên App Store!")}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-black px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-gray-800"
               >
                 App Store
               </button>
               <button
                 type="button"
-                onClick={() => alert("Ứng dụng Trọ Ơi trên Android sắp phát hành trên Google Play!")}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#245f3b] px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-[#1a492d]"
+                onClick={() => alert("Ứng dụng Trọ Tốt trên Android sắp phát hành trên Google Play!")}
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#ea580c] px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-[#c2410c]"
               >
                 Google Play
               </button>

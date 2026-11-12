@@ -1,4 +1,4 @@
-import ReportDialog from "@/components/common/ReportDialog"
+﻿import ReportDialog from "@/components/common/ReportDialog"
 import useDialogFocus from "@/hooks/useDialogFocus"
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react"
 import { useSearchParams, useNavigate, Link } from "react-router"
@@ -769,7 +769,7 @@ export default function MessagesPage() {
                     ? "Chủ trọ"
                     : selectedContact?.role === "renter"
                     ? "Người tìm phòng"
-                    : "Thành viên Trọ Ơi"}
+                    : "Thành viên Trọ Tốt"}
                 </span>
 
                 <div className="profile-stats-row">

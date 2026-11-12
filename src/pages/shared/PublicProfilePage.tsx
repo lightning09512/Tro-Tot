@@ -1,4 +1,4 @@
-import ReportDialog from "@/components/common/ReportDialog"
+﻿import ReportDialog from "@/components/common/ReportDialog"
 import useDialogFocus from "@/hooks/useDialogFocus"
 import { useRef, useEffect, useMemo, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router"
@@ -40,7 +40,7 @@ function ProfilePostCard({
           <span className="post-author-name">{authorName}</span>
           <span className="post-time-meta">{post.time}</span>
         </div>
-        <Link to="/dien-dan" className="post-forum-badge">Diễn đàn Trọ Ơi</Link>
+        <Link to="/dien-dan" className="post-forum-badge">Diễn đàn Trọ Tốt</Link>
       </div>
 
       <div className="post-copy-wrapper">
@@ -458,7 +458,7 @@ export default function PublicProfilePage() {
                   <div className="composer-card-icon"><Icon name="building" size={20} /></div>
                   <div>
                     <strong>Quản lý phòng cho thuê</strong>
-                    <p>Đăng tin mới để tiếp cận hàng ngàn người thuê mỗi ngày trên Trọ Ơi.</p>
+                    <p>Đăng tin mới để tiếp cận hàng ngàn người thuê mỗi ngày trên Trọ Tốt.</p>
                   </div>
                 </div>
                 <button type="button" className="nhatot-btn-chat" onClick={() => navigate("/chu-tro/dang-tin")}>
@@ -532,7 +532,7 @@ export default function PublicProfilePage() {
                 <div className="composer-card-left">
                   <div className="composer-card-icon"><Icon name="edit" size={20} /></div>
                   <div>
-                    <strong>Chia sẻ lên Diễn đàn Trọ Ơi</strong>
+                    <strong>Chia sẻ lên Diễn đàn Trọ Tốt</strong>
                     <p>Chia sẻ kinh nghiệm thuê trọ, tìm ở ghép hoặc chuyển nhượng cọc phòng...</p>
                   </div>
                 </div>

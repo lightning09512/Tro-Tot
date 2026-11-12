@@ -1,4 +1,4 @@
-import { useState, useEffect, type FormEvent, useMemo } from "react"
+﻿import { useState, useEffect, type FormEvent, useMemo } from "react"
 import { Link, useNavigate, useSearchParams } from "react-router"
 import { Icon } from "@/components/common/legacy"
 import { useToast } from "@/contexts/ToastContext"
@@ -637,7 +637,7 @@ export default function MembersPage() {
                     Tất cả bạn bè
                     <span className="fb-count-chip">{friends.length}</span>
                   </h2>
-                  <p className="fb-section-desc">Danh sách bạn bè đã kết nối trên mạng xã hội Trọ Ơi.</p>
+                  <p className="fb-section-desc">Danh sách bạn bè đã kết nối trên mạng xã hội Trọ Tốt.</p>
                 </div>
 
                 {friends.length > 0 && (
@@ -941,7 +941,7 @@ export default function MembersPage() {
                     <div className="fb-phone-guide-text">
                       <h3 style={{ color: "#991b1b" }}>Không tìm thấy người dùng</h3>
                       <p style={{ color: "#65766c", marginBottom: "4px" }}>
-                        Không có tài khoản nào đăng ký số điện thoại <b>{searchPhone}</b> trên hệ thống Trọ Ơi.
+                        Không có tài khoản nào đăng ký số điện thoại <b>{searchPhone}</b> trên hệ thống Trọ Tốt.
                       </p>
                       <small style={{ color: "#8a9a90" }}>Vui lòng kiểm tra lại tính chính xác của số điện thoại và thử lại.</small>
                     </div>

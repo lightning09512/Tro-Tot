@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 
 interface PartnerCardProps {
   onOpenModal: () => void
@@ -6,11 +6,11 @@ interface PartnerCardProps {
 
 export const PartnerCard: React.FC<PartnerCardProps> = ({ onOpenModal }) => {
   return (
-    <div className="home-partner-cta-card" role="region" aria-label="Chương trình Đối tác Trọ Ơi">
+    <div className="home-partner-cta-card" role="region" aria-label="Chương trình Đối tác Trọ Tốt">
       <div className="home-partner-cta-header">
         <h2 className="home-partner-cta-title">
           <span>
-            Trở thành <strong className="home-partner-cta-highlight">Đối tác Trọ Ơi</strong>
+            Trở thành <strong className="home-partner-cta-highlight">Đối tác Trọ Tốt</strong>
           </span>
           <svg
             className="partner-verified-shield"

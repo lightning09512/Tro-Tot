@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Icon } from '../../common/legacy'
 
 interface PartnerBannerProps {
@@ -9,7 +9,7 @@ export const PartnerBanner: React.FC<PartnerBannerProps> = ({ onOpenModal }) => 
   return (
     <div className="home-partner-listings-banner" role="complementary" aria-label="Tin đăng Đối Tác">
       <h3 className="home-partner-listings-title">
-        <span>Tin đăng từ Đối Tác Trọ Ơi</span>
+        <span>Tin đăng từ Đối Tác Trọ Tốt</span>
         <button
           type="button"
           className="home-partner-info-btn"

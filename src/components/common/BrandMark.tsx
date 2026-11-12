@@ -7,10 +7,10 @@ export default function BrandMark({ size = 32, className }: BrandMarkProps) {
   return (
     <img
       className={className}
-      src="/tro-oi-icon.svg"
+      src="/tro-tot-icon.svg"
       width={size}
       height={size}
-      alt=""
+      alt="Trọ Tốt"
       aria-hidden="true"
       draggable={false}
     />

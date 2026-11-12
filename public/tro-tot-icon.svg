@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="totGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7e29" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <!-- Background Squircle -->
+  <rect width="48" height="48" rx="14" fill="url(#totGrad)" />
+  <!-- House Outline & Roof -->
+  <path d="M9.5 22.5L24 10.5l14.5 12v12.5a2.5 2.5 0 0 1-2.5 2.5H12a2.5 2.5 0 0 1-2.5-2.5V22.5Z" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Door -->
+  <path d="M19 37.5V26.5h10v11" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Verified Quality Check Badge ("Tốt") -->
+  <circle cx="34" cy="14" r="6.5" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.8" />
+  <path d="M31.2 14l2 2 3.8-3.8" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router"
+﻿import { useNavigate } from "react-router"
 import { Button, Icon } from "@/components/common/legacy"
 
 export default function PlaceholderPage({
-  eyebrow = "Trọ Ơi",
+  eyebrow = "Trọ Tốt",
   title,
   description,
 }: {

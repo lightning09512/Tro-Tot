@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react"
+﻿import { useState, type FormEvent } from "react"
 import { NavLink, useNavigate } from "react-router"
 import { Button, Icon } from "@/components/common/legacy"
 import AuthShell from "@/pages/auth/AuthShell"
@@ -94,14 +94,14 @@ export default function RegisterPage() {
   }
   return (
     <AuthShell
-      eyebrow="Tham gia Trọ Ơi"
+      eyebrow="Tham gia Trọ Tốt"
       title="Tạo tài khoản"
       description="Chọn vai trò phù hợp để bắt đầu sử dụng nền tảng."
     >
       <form className="auth-form auth-form-grid" onSubmit={submit} noValidate>
         <fieldset className="role-picker full-field">
           <legend>
-            Bạn sử dụng Trọ Ơi với vai trò <span>*</span>
+            Bạn sử dụng Trọ Tốt với vai trò <span>*</span>
           </legend>
           <label>
             <input

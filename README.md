@@ -64,7 +64,7 @@ Nhấn **Save**. Nếu đã có database `trooi`, hãy dùng lại, không tạo
 2. Mở terminal từ menu **Terminal → New Terminal** và chuyển tới thư mục gốc project, nơi có `package.json`. Ví dụ:
 
    ~~~powershell
-   cd D:\KLTN\Tro-Oi-code
+   cd D:\KLTN\Tr-T-t-code
    ~~~
 
    Nếu project nằm ở chỗ khác, thay đường dẫn bằng vị trí trên máy của bạn.

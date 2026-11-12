@@ -1,4 +1,4 @@
-import {
+﻿import {
   lazy,
   Suspense,
   useEffect,
@@ -1093,7 +1093,7 @@ export default function RoomDetailPage() {
                   )}
                   <span>
                     {room.ownerId
-                      ? "Người đăng trên Trọ Ơi"
+                      ? "Người đăng trên Trọ Tốt"
                       : "Thông tin liên hệ đang cập nhật"}
                   </span>
                 </div>
@@ -1164,7 +1164,7 @@ export default function RoomDetailPage() {
               {!room.ownerId && room.status === "active" && (
                 <p>
                   <Icon name="shield" size={15} />
-                  Thông tin liên hệ của tin này đang được cập nhật trên Trọ Ơi.
+                  Thông tin liên hệ của tin này đang được cập nhật trên Trọ Tốt.
                 </p>
               )}
               {room.ownerId && (

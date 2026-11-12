@@ -167,7 +167,7 @@ export default function AdminLayout() {
               />
             </svg>
           </span>
-          <b className="saas-brand-title">Trọ Ơi</b>
+          <b className="saas-brand-title">Trọ Tốt</b>
         </NavLink>
 
         <nav className="saas-sidebar-nav" aria-label="Điều hướng quản trị">

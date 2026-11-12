@@ -1,4 +1,4 @@
-import { PartnerCard, PartnerBanner, PartnerModal } from "@/components/domain/partner"
+﻿import { PartnerCard, PartnerBanner, PartnerModal } from "@/components/domain/partner"
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import { Link } from "react-router"
@@ -274,7 +274,7 @@ function Home() {
       tag: "Chiến dịch cộng đồng · Nhận quà liền tay",
       image: "/images/banners/banner-review-mascot-promo.jpg",
       title: "Review khu trọ bạn biết - Nhận ngay Voucher quà tặng & ăn uống cực xịn!",
-      description: "Chia sẻ trải nghiệm thực tế về phòng trọ, hàng quán, an ninh khu phố để nhận ngay voucher trà sữa, gà rán và rinh ưu đãi thuê trọ độc quyền trên Trọ Ơi.",
+      description: "Chia sẻ trải nghiệm thực tế về phòng trọ, hàng quán, an ninh khu phố để nhận ngay voucher trà sữa, gà rán và rinh ưu đãi thuê trọ độc quyền trên Trọ Tốt.",
       buttonText: "Viết review ngay",
       link: "/dien-dan",
     },
@@ -282,7 +282,7 @@ function Home() {
       id: "landlord-campaign",
       tag: "Chương trình dành cho chủ trọ",
       image: "/images/banners/banner-nhatot-style.jpg",
-      title: "Đăng tin cho thuê trên Trọ Ơi - Tiếp cận hơn 50.000+ người thuê mỗi tháng",
+      title: "Đăng tin cho thuê trên Trọ Tốt - Tiếp cận hơn 50.000+ người thuê mỗi tháng",
       description: "Đăng tin hoàn toàn miễn phí, kết nối người thuê trực tiếp không qua trung gian. Hệ thống hỗ trợ gắn nhãn chính chủ xác thực và quản lý lịch hẹn thông minh!",
       buttonText: "Đăng tin ngay",
       link: landlordProgramUrl,
@@ -291,7 +291,7 @@ function Home() {
       id: "renter-campaign",
       tag: "Ưu đãi sinh viên & người thuê",
       image: "/images/banners/banner-student-nhatot.jpg",
-      title: "Rủ bạn cùng tìm phòng trên Trọ Ơi - Nhận trọn ưu đãi tiện ích",
+      title: "Rủ bạn cùng tìm phòng trên Trọ Tốt - Nhận trọn ưu đãi tiện ích",
       description: "Khám phá hàng ngàn phòng trọ gần các trường đại học lớn tại TP.HCM, xem ảnh thật, giá điện nước minh bạch và hẹn xem phòng tiện lợi ngay trên hệ thống!",
       buttonText: "Tìm phòng ngay",
       link: "/tim-phong",
@@ -300,7 +300,7 @@ function Home() {
       id: "community-campaign",
       tag: "Cộng đồng & Tìm ở ghép",
       image: "/images/banners/banner-roommate-community.jpg",
-      title: "Tìm bạn ở ghép & Pass phòng trên Diễn đàn Trọ Ơi",
+      title: "Tìm bạn ở ghép & Pass phòng trên Diễn đàn Trọ Tốt",
       description: "Kết nối bạn cùng phòng lý tưởng, pass phòng sang nhượng cọc nhanh chóng và chia sẻ kinh nghiệm thuê trọ thực tế từ cộng đồng.",
       buttonText: "Tham gia diễn đàn",
       link: "/dien-dan",
@@ -310,7 +310,7 @@ function Home() {
       tag: "Phòng trọ xác thực 100%",
       image: "/images/banners/banner-verified-safety.jpg",
       title: "Phòng trọ chính chủ xác thực - An tâm đặt cọc, không lo tin ảo",
-      description: "Trọ Ơi cam kết 100% tin phòng được kiểm duyệt thông tin, giá thuê minh bạch, hỗ trợ xem phòng trực tiếp và bảo vệ quyền lợi người thuê.",
+      description: "Trọ Tốt cam kết 100% tin phòng được kiểm duyệt thông tin, giá thuê minh bạch, hỗ trợ xem phòng trực tiếp và bảo vệ quyền lợi người thuê.",
       buttonText: "Khám phá ngay",
       link: "/tim-phong",
     },
@@ -594,7 +594,7 @@ function Home() {
           </div>
         </div>
 
-        {/* Trở thành Đối tác Trọ Ơi (Nhà Tốt Style) CTA Card */}
+        {/* Trở thành Đối tác Trọ Tốt (Nhà Tốt Style) CTA Card */}
         <PartnerCard onOpenModal={() => setPartnerModalOpen(true)} />
       </section>
 
@@ -605,19 +605,19 @@ function Home() {
           </button>)}</nav>
           <SectionTitle title="Tìm nơi ở phù hợp với bạn" action="Xem tất cả phòng" onAction={() => navigate("/tim-phong")}/>
 
-          {/* Tin đăng từ Đối Tác Trọ Ơi Banner Bar */}
+          {/* Tin đăng từ Đối Tác Trọ Tốt Banner Bar */}
           <PartnerBanner onOpenModal={() => setPartnerModalOpen(true)} />
           {connectionState === "loading" && !availableRooms.length ? <RoomCardSkeletonGrid count={8}/> : availableRooms.length ? <div className="room-grid">{availableRooms.slice(0, 8).map((room) => <RoomCard key={room.id} room={room} onClick={() => navigate(`/phong/${room.id}`)}/>)}</div> : <div className="public-empty-state"><Icon name="building" size={28}/><h3>{connectionState === "error" ? "Chưa tải được danh sách phòng" : "Chưa có phòng đang hiển thị"}</h3><p>{connectionState === "error" ? "Kiểm tra kết nối và thử tải lại trang để xem các tin mới nhất." : "Bạn có thể quay lại sau hoặc tham gia diễn đàn để chia sẻ nhu cầu tìm phòng."}</p><Button variant="outline" onClick={() => connectionState === "error" ? window.location.reload() : navigate("/dien-dan")}>{connectionState === "error" ? "Tải lại trang" : "Vào diễn đàn"}</Button></div>}
         </div>
       </section>
       {locations.length > 0 && <section className="home-districts-section" aria-labelledby="home-districts-title"><div className="container">
-        <div className="section-head-with-subtitle"><div><h2 id="home-districts-title">Khám phá theo khu vực</h2><p>Các khu vực đang có tin cho thuê trên Trọ Ơi.</p></div><Link to="/tim-phong?location=" className="section-view-all">Xem toàn quốc <Icon name="chevron" size={16}/></Link></div>
+        <div className="section-head-with-subtitle"><div><h2 id="home-districts-title">Khám phá theo khu vực</h2><p>Các khu vực đang có tin cho thuê trên Trọ Tốt.</p></div><Link to="/tim-phong?location=" className="section-view-all">Xem toàn quốc <Icon name="chevron" size={16}/></Link></div>
         <div className="districts-grid">{locations.map(([city, rooms]) => <Link key={city} className="district-card" to={`/tim-phong?location=${encodeURIComponent(city)}`}>
           <div className="district-media"><img src={rooms[0].image} alt={`Phòng cho thuê tại ${city}`} loading="lazy"/><span className="district-count-badge">{rooms.length} tin đang mở</span></div>
           <div className="district-info"><h3>{city}</h3><span className="district-explore-link">Khám phá khu vực <Icon name="chevron" size={16}/></span></div>
         </Link>)}</div>
       </div></section>}
-      <section className="home-action-section"><div className="container"><div className="home-action-band"><div><h2>{user?.role === "renter" ? "Tìm bạn ở ghép, chia sẻ chuyện thuê trọ." : "Có một căn phòng đang chờ người ở?"}</h2><p>{user?.role === "renter" ? "Đăng bài trên diễn đàn để tìm bạn cùng phòng hoặc chia sẻ thông tin pass phòng." : "Đăng tin với ảnh và thông tin rõ ràng, quản lý tin và trao đổi với người quan tâm ngay trên Trọ Ơi."}</p></div><Link to={postingLink} className="btn primary">{user?.role === "renter" ? "Vào diễn đàn" : user?.role === "admin" ? "Quản lý tin đăng" : "Bắt đầu đăng tin"}<Icon name="chevron" size={17}/></Link></div></div></section>
+      <section className="home-action-section"><div className="container"><div className="home-action-band"><div><h2>{user?.role === "renter" ? "Tìm bạn ở ghép, chia sẻ chuyện thuê trọ." : "Có một căn phòng đang chờ người ở?"}</h2><p>{user?.role === "renter" ? "Đăng bài trên diễn đàn để tìm bạn cùng phòng hoặc chia sẻ thông tin pass phòng." : "Đăng tin với ảnh và thông tin rõ ràng, quản lý tin và trao đổi với người quan tâm ngay trên Trọ Tốt."}</p></div><Link to={postingLink} className="btn primary">{user?.role === "renter" ? "Vào diễn đàn" : user?.role === "admin" ? "Quản lý tin đăng" : "Bắt đầu đăng tin"}<Icon name="chevron" size={17}/></Link></div></div></section>
       <section className="home-campaign-section" aria-labelledby="home-campaign-title">
         <div className="container">
           <div className="campaign-head">

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router"
+﻿import { Link, NavLink } from "react-router"
 
 type PlaceholderPageProps = {
   title: string
@@ -15,7 +15,7 @@ const forumLinks = [
 
 export default function PlaceholderPage({
   title,
-  section = "Trọ Ơi",
+  section = "Trọ Tốt",
   message = "Nội dung trang đang được hoàn thiện.",
   forumNavigation = false,
 }: PlaceholderPageProps) {

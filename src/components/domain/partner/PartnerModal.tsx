@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Button } from '../../ui/Button'
 import { Icon } from '../../common/legacy'
 
@@ -30,7 +30,7 @@ export const PartnerModal: React.FC<PartnerModalProps> = ({
         <div className="partner-modal-header">
           <div className="partner-modal-title-box">
             <span className="partner-modal-badge">Chương trình độc quyền</span>
-            <h3 id="partner-dialog-title">Trở thành Đối tác Trọ Ơi</h3>
+            <h3 id="partner-dialog-title">Trở thành Đối tác Trọ Tốt</h3>
             <p>Nâng tầm uy tín và tăng tốc độ tìm kiếm khách thuê phòng hiệu quả nhất</p>
           </div>
           <button

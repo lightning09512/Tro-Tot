@@ -1,4 +1,4 @@
-import {
+﻿import {
   createContext,
   useContext,
   useCallback,
@@ -296,8 +296,8 @@ const initialMessages: MessageRecord[] = conversations.slice(0, 3).map((conversa
     ],
     [
       { id: "msg-3-1", from: "me", text: "Chào admin, mình thấy có tin đăng ở Bình Thạnh để giá ảo 1tr5 câu view xong đòi cọc trước á.", time: "T.2 14:00" },
-      { id: "msg-3-2", from: "them", text: "Chào bạn, Trọ Ơi đã tiếp nhận phản ánh của bạn. Đội ngũ kiểm duyệt đang xác minh tin đăng này.", time: "T.2 14:15" },
-      { id: "msg-3-3", from: "them", text: "Admin đã kiểm tra và gỡ tin đăng vi phạm rồi nhé! Cảm ơn bạn đã chung tay bảo vệ cộng đồng Trọ Ơi an toàn ạ.", time: "T.2 15:30" },
+      { id: "msg-3-2", from: "them", text: "Chào bạn, Trọ Tốt đã tiếp nhận phản ánh của bạn. Đội ngũ kiểm duyệt đang xác minh tin đăng này.", time: "T.2 14:15" },
+      { id: "msg-3-3", from: "them", text: "Admin đã kiểm tra và gỡ tin đăng vi phạm rồi nhé! Cảm ơn bạn đã chung tay bảo vệ cộng đồng Trọ Tốt an toàn ạ.", time: "T.2 15:30" },
     ],
   ]
 
